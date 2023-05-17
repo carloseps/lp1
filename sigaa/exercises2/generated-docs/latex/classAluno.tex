@@ -1,0 +1,537 @@
+\hypertarget{classAluno}{}\doxysection{Aluno Class Reference}
+\label{classAluno}\index{Aluno@{Aluno}}
+
+
+{\ttfamily \#include $<$Aluno.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAluno_a1c3f9523ae4e0c9b47c39f287ad4647c}{Aluno}} (int \mbox{\hyperlink{classAluno_ab2211500355e188395138f657238f94c}{matricula}}, std\+::string \mbox{\hyperlink{classAluno_a1e24b848527bc6fae76bc28f4fdaaf64}{nome}}, float \mbox{\hyperlink{classAluno_a7d1a7e291557f7d4b5fe0ec7bff0f11b}{nota1}}, float \mbox{\hyperlink{classAluno_a0c50df63776e35c351c48f5dd9394a30}{nota2}}, float \mbox{\hyperlink{classAluno_a1b8a54f6700759eefdac94bd262947bc}{nota3}})
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classAluno}{Aluno}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAluno_a025dacba35428c0ed4e1bdde2eba759a}{$\sim$\+Aluno}} ()
+\item 
+void \mbox{\hyperlink{classAluno_a3945b989bbc4c6990edea01f9f266a62}{set\+Matricula}} (int \mbox{\hyperlink{classAluno_ab2211500355e188395138f657238f94c}{matricula}})
+\begin{DoxyCompactList}\small\item\em Define a matricula do aluno. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAluno_aaf696bced97878fbfb96a84278055a01}{get\+Matricula}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a matricula do aluno. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAluno_a3004d4ab179433510f22a7c7dbd2742b}{set\+Nome}} (std\+::string \mbox{\hyperlink{classAluno_a1e24b848527bc6fae76bc28f4fdaaf64}{nome}})
+\begin{DoxyCompactList}\small\item\em Define o nome do aluno. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAluno_aab79c16403c50c38d0772df4d5310644}{get\+Nome}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o nome do aluno. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAluno_a68c11246f68e52d89d0c22b761a5b902}{set\+Nota1}} (float nota)
+\begin{DoxyCompactList}\small\item\em Define a primeira nota do aluno. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classAluno_a176ef48ae7c04dcd96ca3f7d457e43ae}{get\+Nota1}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a primeira nota do aluno. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAluno_a655e0c80374b28b9f9b006d7f6c2027a}{set\+Nota2}} (float nota)
+\begin{DoxyCompactList}\small\item\em Define a segunda nota do aluno. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classAluno_aadee928ef5284f511259c8e168cabafe}{get\+Nota2}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a segunda nota do aluno. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAluno_ad98e139e668d6976669892411a23868c}{set\+Nota3}} (float nota)
+\begin{DoxyCompactList}\small\item\em Define a terceira nota do aluno. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classAluno_a879ea136d26bbe28025379486b66dfcd}{get\+Nota3}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a terceira nota do aluno. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classAluno_a400bc9f038ba50d8d35abbc477fb6cb9}{calcula\+Media}} () const
+\begin{DoxyCompactList}\small\item\em Calcula a media do aluno. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classAluno_ab2211500355e188395138f657238f94c}{matricula}}
+\item 
+std\+::string \mbox{\hyperlink{classAluno_a1e24b848527bc6fae76bc28f4fdaaf64}{nome}}
+\item 
+float \mbox{\hyperlink{classAluno_a7d1a7e291557f7d4b5fe0ec7bff0f11b}{nota1}}
+\item 
+float \mbox{\hyperlink{classAluno_a0c50df63776e35c351c48f5dd9394a30}{nota2}}
+\item 
+float \mbox{\hyperlink{classAluno_a1b8a54f6700759eefdac94bd262947bc}{nota3}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 7 of file Aluno.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAluno_a1c3f9523ae4e0c9b47c39f287ad4647c}\label{classAluno_a1c3f9523ae4e0c9b47c39f287ad4647c}} 
+\index{Aluno@{Aluno}!Aluno@{Aluno}}
+\index{Aluno@{Aluno}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{Aluno()}{Aluno()}}
+{\footnotesize\ttfamily Aluno\+::\+Aluno (\begin{DoxyParamCaption}\item[{int}]{matricula,  }\item[{std\+::string}]{nome,  }\item[{float}]{nota1,  }\item[{float}]{nota2,  }\item[{float}]{nota3 }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classAluno}{Aluno}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matricula} & = matricula do aluno, nome = nome do aluno, nota1 = nota do aluno na primeira prova, nota2= nota do aluno na segunda prova, nota3 = nota do aluno na terceira prova \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 13 of file Aluno.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13                                                                                  \{}
+\DoxyCodeLine{14     this-\/>\mbox{\hyperlink{classAluno_ab2211500355e188395138f657238f94c}{matricula}} = \mbox{\hyperlink{classAluno_ab2211500355e188395138f657238f94c}{matricula}};}
+\DoxyCodeLine{15     this-\/>\mbox{\hyperlink{classAluno_a1e24b848527bc6fae76bc28f4fdaaf64}{nome}} = \mbox{\hyperlink{classAluno_a1e24b848527bc6fae76bc28f4fdaaf64}{nome}};}
+\DoxyCodeLine{16     this-\/>\mbox{\hyperlink{classAluno_a7d1a7e291557f7d4b5fe0ec7bff0f11b}{nota1}} = \mbox{\hyperlink{classAluno_a7d1a7e291557f7d4b5fe0ec7bff0f11b}{nota1}};}
+\DoxyCodeLine{17     this-\/>\mbox{\hyperlink{classAluno_a0c50df63776e35c351c48f5dd9394a30}{nota2}} = \mbox{\hyperlink{classAluno_a0c50df63776e35c351c48f5dd9394a30}{nota2}};}
+\DoxyCodeLine{18     this-\/>\mbox{\hyperlink{classAluno_a1b8a54f6700759eefdac94bd262947bc}{nota3}} = \mbox{\hyperlink{classAluno_a1b8a54f6700759eefdac94bd262947bc}{nota3}};}
+\DoxyCodeLine{19 \}}
+
+\end{DoxyCode}
+
+
+References matricula, nome, nota1, nota2, and nota3.
+
+\mbox{\Hypertarget{classAluno_a025dacba35428c0ed4e1bdde2eba759a}\label{classAluno_a025dacba35428c0ed4e1bdde2eba759a}} 
+\index{Aluno@{Aluno}!````~Aluno@{$\sim$Aluno}}
+\index{````~Aluno@{$\sim$Aluno}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{$\sim$Aluno()}{~Aluno()}}
+{\footnotesize\ttfamily Aluno\+::$\sim$\+Aluno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 22 of file Aluno.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAluno_a400bc9f038ba50d8d35abbc477fb6cb9}\label{classAluno_a400bc9f038ba50d8d35abbc477fb6cb9}} 
+\index{Aluno@{Aluno}!calculaMedia@{calculaMedia}}
+\index{calculaMedia@{calculaMedia}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{calculaMedia()}{calculaMedia()}}
+{\footnotesize\ttfamily float Aluno\+::calcula\+Media (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Calcula a media do aluno. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 119 of file Aluno.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{119                                 \{}
+\DoxyCodeLine{120     \textcolor{keywordflow}{return} (this-\/>\mbox{\hyperlink{classAluno_a7d1a7e291557f7d4b5fe0ec7bff0f11b}{nota1}} + this-\/>\mbox{\hyperlink{classAluno_a0c50df63776e35c351c48f5dd9394a30}{nota2}} + this-\/>\mbox{\hyperlink{classAluno_a1b8a54f6700759eefdac94bd262947bc}{nota3}}) / 3.0;}
+\DoxyCodeLine{121 \}}
+
+\end{DoxyCode}
+
+
+References nota1, nota2, and nota3.
+
+\mbox{\Hypertarget{classAluno_aaf696bced97878fbfb96a84278055a01}\label{classAluno_aaf696bced97878fbfb96a84278055a01}} 
+\index{Aluno@{Aluno}!getMatricula@{getMatricula}}
+\index{getMatricula@{getMatricula}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{getMatricula()}{getMatricula()}}
+{\footnotesize\ttfamily int Aluno\+::get\+Matricula (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna a matricula do aluno. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 38 of file Aluno.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38                               \{}
+\DoxyCodeLine{39     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classAluno_ab2211500355e188395138f657238f94c}{matricula}};}
+\DoxyCodeLine{40 \}}
+
+\end{DoxyCode}
+
+
+References matricula.
+
+\mbox{\Hypertarget{classAluno_aab79c16403c50c38d0772df4d5310644}\label{classAluno_aab79c16403c50c38d0772df4d5310644}} 
+\index{Aluno@{Aluno}!getNome@{getNome}}
+\index{getNome@{getNome}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily std\+::string Aluno\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna o nome do aluno. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 56 of file Aluno.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56                                \{}
+\DoxyCodeLine{57     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classAluno_a1e24b848527bc6fae76bc28f4fdaaf64}{nome}};}
+\DoxyCodeLine{58 \}}
+
+\end{DoxyCode}
+
+
+References nome.
+
+\mbox{\Hypertarget{classAluno_a176ef48ae7c04dcd96ca3f7d457e43ae}\label{classAluno_a176ef48ae7c04dcd96ca3f7d457e43ae}} 
+\index{Aluno@{Aluno}!getNota1@{getNota1}}
+\index{getNota1@{getNota1}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{getNota1()}{getNota1()}}
+{\footnotesize\ttfamily float Aluno\+::get\+Nota1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna a primeira nota do aluno. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 74 of file Aluno.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74                             \{}
+\DoxyCodeLine{75     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classAluno_a7d1a7e291557f7d4b5fe0ec7bff0f11b}{nota1}};}
+\DoxyCodeLine{76 \}}
+
+\end{DoxyCode}
+
+
+References nota1.
+
+\mbox{\Hypertarget{classAluno_aadee928ef5284f511259c8e168cabafe}\label{classAluno_aadee928ef5284f511259c8e168cabafe}} 
+\index{Aluno@{Aluno}!getNota2@{getNota2}}
+\index{getNota2@{getNota2}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{getNota2()}{getNota2()}}
+{\footnotesize\ttfamily float Aluno\+::get\+Nota2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna a segunda nota do aluno. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 92 of file Aluno.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{92                             \{}
+\DoxyCodeLine{93     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classAluno_a0c50df63776e35c351c48f5dd9394a30}{nota2}};}
+\DoxyCodeLine{94 \}}
+
+\end{DoxyCode}
+
+
+References nota2.
+
+\mbox{\Hypertarget{classAluno_a879ea136d26bbe28025379486b66dfcd}\label{classAluno_a879ea136d26bbe28025379486b66dfcd}} 
+\index{Aluno@{Aluno}!getNota3@{getNota3}}
+\index{getNota3@{getNota3}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{getNota3()}{getNota3()}}
+{\footnotesize\ttfamily float Aluno\+::get\+Nota3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna a terceira nota do aluno. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 110 of file Aluno.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{110                             \{}
+\DoxyCodeLine{111     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classAluno_a1b8a54f6700759eefdac94bd262947bc}{nota3}};}
+\DoxyCodeLine{112 \}}
+
+\end{DoxyCode}
+
+
+References nota3.
+
+\mbox{\Hypertarget{classAluno_a3945b989bbc4c6990edea01f9f266a62}\label{classAluno_a3945b989bbc4c6990edea01f9f266a62}} 
+\index{Aluno@{Aluno}!setMatricula@{setMatricula}}
+\index{setMatricula@{setMatricula}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{setMatricula()}{setMatricula()}}
+{\footnotesize\ttfamily void Aluno\+::set\+Matricula (\begin{DoxyParamCaption}\item[{int}]{matricula }\end{DoxyParamCaption})}
+
+
+
+Define a matricula do aluno. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matricula} & = matricula do aluno \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file Aluno.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29                                       \{}
+\DoxyCodeLine{30     this-\/>\mbox{\hyperlink{classAluno_ab2211500355e188395138f657238f94c}{matricula}} = \mbox{\hyperlink{classAluno_ab2211500355e188395138f657238f94c}{matricula}};}
+\DoxyCodeLine{31 \}}
+
+\end{DoxyCode}
+
+
+References matricula.
+
+\mbox{\Hypertarget{classAluno_a3004d4ab179433510f22a7c7dbd2742b}\label{classAluno_a3004d4ab179433510f22a7c7dbd2742b}} 
+\index{Aluno@{Aluno}!setNome@{setNome}}
+\index{setNome@{setNome}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily void Aluno\+::set\+Nome (\begin{DoxyParamCaption}\item[{std\+::string}]{nome }\end{DoxyParamCaption})}
+
+
+
+Define o nome do aluno. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & = nome do aluno \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 47 of file Aluno.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                                   \{}
+\DoxyCodeLine{48     this-\/>\mbox{\hyperlink{classAluno_a1e24b848527bc6fae76bc28f4fdaaf64}{nome}} = \mbox{\hyperlink{classAluno_a1e24b848527bc6fae76bc28f4fdaaf64}{nome}};}
+\DoxyCodeLine{49 \}}
+
+\end{DoxyCode}
+
+
+References nome.
+
+\mbox{\Hypertarget{classAluno_a68c11246f68e52d89d0c22b761a5b902}\label{classAluno_a68c11246f68e52d89d0c22b761a5b902}} 
+\index{Aluno@{Aluno}!setNota1@{setNota1}}
+\index{setNota1@{setNota1}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{setNota1()}{setNota1()}}
+{\footnotesize\ttfamily void Aluno\+::set\+Nota1 (\begin{DoxyParamCaption}\item[{float}]{nota }\end{DoxyParamCaption})}
+
+
+
+Define a primeira nota do aluno. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nota} & = nota1 do aluno \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 65 of file Aluno.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                                \{}
+\DoxyCodeLine{66     this-\/>\mbox{\hyperlink{classAluno_a7d1a7e291557f7d4b5fe0ec7bff0f11b}{nota1}} = nota;}
+\DoxyCodeLine{67 \}}
+
+\end{DoxyCode}
+
+
+References nota1.
+
+\mbox{\Hypertarget{classAluno_a655e0c80374b28b9f9b006d7f6c2027a}\label{classAluno_a655e0c80374b28b9f9b006d7f6c2027a}} 
+\index{Aluno@{Aluno}!setNota2@{setNota2}}
+\index{setNota2@{setNota2}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{setNota2()}{setNota2()}}
+{\footnotesize\ttfamily void Aluno\+::set\+Nota2 (\begin{DoxyParamCaption}\item[{float}]{nota }\end{DoxyParamCaption})}
+
+
+
+Define a segunda nota do aluno. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nota} & = nota2 do aluno \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 83 of file Aluno.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83                                \{}
+\DoxyCodeLine{84     this-\/>\mbox{\hyperlink{classAluno_a0c50df63776e35c351c48f5dd9394a30}{nota2}} = nota;}
+\DoxyCodeLine{85 \}}
+
+\end{DoxyCode}
+
+
+References nota2.
+
+\mbox{\Hypertarget{classAluno_ad98e139e668d6976669892411a23868c}\label{classAluno_ad98e139e668d6976669892411a23868c}} 
+\index{Aluno@{Aluno}!setNota3@{setNota3}}
+\index{setNota3@{setNota3}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{setNota3()}{setNota3()}}
+{\footnotesize\ttfamily void Aluno\+::set\+Nota3 (\begin{DoxyParamCaption}\item[{float}]{nota }\end{DoxyParamCaption})}
+
+
+
+Define a terceira nota do aluno. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nota} & = nota3 do aluno \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 101 of file Aluno.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101                                \{}
+\DoxyCodeLine{102     this-\/>\mbox{\hyperlink{classAluno_a1b8a54f6700759eefdac94bd262947bc}{nota3}} = nota;}
+\DoxyCodeLine{103 \}}
+
+\end{DoxyCode}
+
+
+References nota3.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classAluno_ab2211500355e188395138f657238f94c}\label{classAluno_ab2211500355e188395138f657238f94c}} 
+\index{Aluno@{Aluno}!matricula@{matricula}}
+\index{matricula@{matricula}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{matricula}{matricula}}
+{\footnotesize\ttfamily int Aluno\+::matricula\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 9 of file Aluno.\+h.
+
+
+
+Referenced by Aluno(), get\+Matricula(), and set\+Matricula().
+
+\mbox{\Hypertarget{classAluno_a1e24b848527bc6fae76bc28f4fdaaf64}\label{classAluno_a1e24b848527bc6fae76bc28f4fdaaf64}} 
+\index{Aluno@{Aluno}!nome@{nome}}
+\index{nome@{nome}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{nome}{nome}}
+{\footnotesize\ttfamily std\+::string Aluno\+::nome\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 10 of file Aluno.\+h.
+
+
+
+Referenced by Aluno(), get\+Nome(), and set\+Nome().
+
+\mbox{\Hypertarget{classAluno_a7d1a7e291557f7d4b5fe0ec7bff0f11b}\label{classAluno_a7d1a7e291557f7d4b5fe0ec7bff0f11b}} 
+\index{Aluno@{Aluno}!nota1@{nota1}}
+\index{nota1@{nota1}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{nota1}{nota1}}
+{\footnotesize\ttfamily float Aluno\+::nota1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 11 of file Aluno.\+h.
+
+
+
+Referenced by Aluno(), calcula\+Media(), get\+Nota1(), and set\+Nota1().
+
+\mbox{\Hypertarget{classAluno_a0c50df63776e35c351c48f5dd9394a30}\label{classAluno_a0c50df63776e35c351c48f5dd9394a30}} 
+\index{Aluno@{Aluno}!nota2@{nota2}}
+\index{nota2@{nota2}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{nota2}{nota2}}
+{\footnotesize\ttfamily float Aluno\+::nota2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 12 of file Aluno.\+h.
+
+
+
+Referenced by Aluno(), calcula\+Media(), get\+Nota2(), and set\+Nota2().
+
+\mbox{\Hypertarget{classAluno_a1b8a54f6700759eefdac94bd262947bc}\label{classAluno_a1b8a54f6700759eefdac94bd262947bc}} 
+\index{Aluno@{Aluno}!nota3@{nota3}}
+\index{nota3@{nota3}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{nota3}{nota3}}
+{\footnotesize\ttfamily float Aluno\+::nota3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 13 of file Aluno.\+h.
+
+
+
+Referenced by Aluno(), calcula\+Media(), get\+Nota3(), and set\+Nota3().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Q3/\mbox{\hyperlink{Aluno_8h}{Aluno.\+h}}\item 
+Q3/\mbox{\hyperlink{Aluno_8cpp}{Aluno.\+cpp}}\end{DoxyCompactItemize}

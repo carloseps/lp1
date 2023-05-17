@@ -1,0 +1,27 @@
+Para testar o código é necessário apenas que o usuário interaja com os menus que irão aparecer durante o tempo de execução. Tendo a possibilidade de\+:
+
+
+\begin{DoxyEnumerate}
+\item Listar alunos
+\item Ordenar alunos
+\item Sair do programa
+\end{DoxyEnumerate}
+
+É importante ressaltar que ao selecionar a opção \char`\"{}$\ast$2 -\/ Ordenar alunos$\ast$\char`\"{} abre-\/se um novo menu que disponibiliza opções de ordenação da lista de alunos. No caso, por qual campo eles devem ser ordenados, sendo\+:
+
+
+\begin{DoxyEnumerate}
+\item Matrícula
+\item Nome
+\item Nota
+\end{DoxyEnumerate}
+
+Existe também a opção \char`\"{}$\ast$4 -\/ Sair$\ast$\char`\"{}, que se selecionada, faz com que retorne ao menu inicial.
+
+PS\+: Não é necessário preencher dados e informações sobre os alunos, como\+: matrícula, nome e notas. O código conta com um método que popula a lista de alunos sozinho.
+
+São criados alunos com nomes pertencentes a um array de nomes, que possui 100 strings, ou seja, 100 opções de nomes aleatórios de pessoas comuns.
+
+A matrícula é gerada através de uma estratégia de multiplicação de iterador com soma.
+
+As notas de cada aluno são geradas aleatoriamente usando a função {\itshape rand}, que é uma função da biblioteca padrão {\itshape cstdlib} que gera um número pseudo-\/aleatório. 

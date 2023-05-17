@@ -1,0 +1,157 @@
+\hypertarget{1_8cpp}{}\doxysection{Q1/1.cpp File Reference}
+\label{1_8cpp}\index{Q1/1.cpp@{Q1/1.cpp}}
+
+
+Documentação Questão1.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for 1.cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{1_8cpp_a445aa2fbdb2a0557876272b2455c2c9c}{tribonacci\+Recursiva}} (int numero)
+\begin{DoxyCompactList}\small\item\em Funcao que calcula o n-\/ésimo termo da sequencia tribonacci. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{1_8cpp_a3210c4cd4c5d47a8307b30d4bc90f48f}{tribonacci\+Iterativa}} (int numero)
+\begin{DoxyCompactList}\small\item\em Funcao que calcula o n-\/ésimo termo da sequencia tribonacci. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{1_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}{main}} (int argc, char const $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Documentação Questão1. 
+
+\begin{DoxyAuthor}{Author}
+Carlos Pinheiro -\/ 20220030194 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{1_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}\label{1_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}} 
+\index{1.cpp@{1.cpp}!main@{main}}
+\index{main@{main}!1.cpp@{1.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char const $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 45 of file 1.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45                                       \{}
+\DoxyCodeLine{46     \textcolor{keywordtype}{int} n1 = 3;}
+\DoxyCodeLine{47     \textcolor{keywordtype}{int} n2 = 5;}
+\DoxyCodeLine{48     \textcolor{keywordtype}{int} n3 = 6;}
+\DoxyCodeLine{49     \textcolor{keywordtype}{int} n4 = 7;}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{comment}{//Testes}}
+\DoxyCodeLine{52     std::cout << \mbox{\hyperlink{1_8cpp_a445aa2fbdb2a0557876272b2455c2c9c}{tribonacciRecursiva}}(n1) << std::endl;}
+\DoxyCodeLine{53     std::cout << \mbox{\hyperlink{1_8cpp_a445aa2fbdb2a0557876272b2455c2c9c}{tribonacciRecursiva}}(n2) << std::endl;}
+\DoxyCodeLine{54     std::cout << \mbox{\hyperlink{1_8cpp_a445aa2fbdb2a0557876272b2455c2c9c}{tribonacciRecursiva}}(n3) << std::endl;}
+\DoxyCodeLine{55     std::cout << \mbox{\hyperlink{1_8cpp_a445aa2fbdb2a0557876272b2455c2c9c}{tribonacciRecursiva}}(n4) << std::endl;}
+\DoxyCodeLine{56     std::cout << std::endl;}
+\DoxyCodeLine{57     std::cout << \mbox{\hyperlink{1_8cpp_a3210c4cd4c5d47a8307b30d4bc90f48f}{tribonacciIterativa}}(n1) << std::endl;}
+\DoxyCodeLine{58     std::cout << \mbox{\hyperlink{1_8cpp_a3210c4cd4c5d47a8307b30d4bc90f48f}{tribonacciIterativa}}(n2) << std::endl;}
+\DoxyCodeLine{59     std::cout << \mbox{\hyperlink{1_8cpp_a3210c4cd4c5d47a8307b30d4bc90f48f}{tribonacciIterativa}}(n3) << std::endl;}
+\DoxyCodeLine{60     std::cout << \mbox{\hyperlink{1_8cpp_a3210c4cd4c5d47a8307b30d4bc90f48f}{tribonacciIterativa}}(n4) << std::endl;}
+\DoxyCodeLine{61     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{62 \}}
+
+\end{DoxyCode}
+
+
+References tribonacci\+Iterativa(), and tribonacci\+Recursiva().
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{1_8cpp_a3210c4cd4c5d47a8307b30d4bc90f48f}\label{1_8cpp_a3210c4cd4c5d47a8307b30d4bc90f48f}} 
+\index{1.cpp@{1.cpp}!tribonacciIterativa@{tribonacciIterativa}}
+\index{tribonacciIterativa@{tribonacciIterativa}!1.cpp@{1.cpp}}
+\doxysubsubsection{\texorpdfstring{tribonacciIterativa()}{tribonacciIterativa()}}
+{\footnotesize\ttfamily int tribonacci\+Iterativa (\begin{DoxyParamCaption}\item[{int}]{numero }\end{DoxyParamCaption})}
+
+
+
+Funcao que calcula o n-\/ésimo termo da sequencia tribonacci. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numero} & = indice do termo da sequencia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+o numero correspondente ao indice informado 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file 1.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28                                     \{}
+\DoxyCodeLine{29     \textcolor{keywordflow}{if} (numero == 0 || numero == 1)\{}
+\DoxyCodeLine{30         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{31     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(numero == 2)\{}
+\DoxyCodeLine{32         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{33     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{34         \textcolor{keywordtype}{int} trib0 = 0, trib1 = 0, trib2 = 1, tribN;}
+\DoxyCodeLine{35         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 3; i <= numero; i++)\{}
+\DoxyCodeLine{36             tribN = trib0 + trib1 + trib2;}
+\DoxyCodeLine{37             trib0 = trib1;}
+\DoxyCodeLine{38             trib1 = trib2;}
+\DoxyCodeLine{39             trib2 = tribN;}
+\DoxyCodeLine{40         \}}
+\DoxyCodeLine{41         \textcolor{keywordflow}{return} tribN;}
+\DoxyCodeLine{42     \}}
+\DoxyCodeLine{43 \}}
+
+\end{DoxyCode}
+
+
+Referenced by main().
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{1_8cpp_a445aa2fbdb2a0557876272b2455c2c9c}\label{1_8cpp_a445aa2fbdb2a0557876272b2455c2c9c}} 
+\index{1.cpp@{1.cpp}!tribonacciRecursiva@{tribonacciRecursiva}}
+\index{tribonacciRecursiva@{tribonacciRecursiva}!1.cpp@{1.cpp}}
+\doxysubsubsection{\texorpdfstring{tribonacciRecursiva()}{tribonacciRecursiva()}}
+{\footnotesize\ttfamily int tribonacci\+Recursiva (\begin{DoxyParamCaption}\item[{int}]{numero }\end{DoxyParamCaption})}
+
+
+
+Funcao que calcula o n-\/ésimo termo da sequencia tribonacci. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numero} & = indice do termo da sequencia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+o numero correspondente ao indice informado 
+\end{DoxyReturn}
+
+
+Definition at line 13 of file 1.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13                                     \{}
+\DoxyCodeLine{14     \textcolor{keywordflow}{if} (numero == 0 || numero == 1)\{}
+\DoxyCodeLine{15         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{16     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(numero == 2)\{}
+\DoxyCodeLine{17         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{18     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{19         \textcolor{keywordflow}{return} \mbox{\hyperlink{1_8cpp_a445aa2fbdb2a0557876272b2455c2c9c}{tribonacciRecursiva}}(numero -\/ 1) + \mbox{\hyperlink{1_8cpp_a445aa2fbdb2a0557876272b2455c2c9c}{tribonacciRecursiva}}(numero -\/ 2) + \mbox{\hyperlink{1_8cpp_a445aa2fbdb2a0557876272b2455c2c9c}{tribonacciRecursiva}}(numero -\/ 3);}
+\DoxyCodeLine{20     \}}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+
+
+Referenced by main().
+
+Here is the caller graph for this function\+:
+% FIG 3
