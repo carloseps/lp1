@@ -1,0 +1,133 @@
+\hypertarget{main_8cpp}{}\doxysection{Q3/main.cpp File Reference}
+\label{main_8cpp}\index{Q3/main.cpp@{Q3/main.cpp}}
+
+
+Documentação Questão3.  
+
+
+{\ttfamily \#include \char`\"{}Aluno.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Turma.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for main.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}{main}} (int argc, char const $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{main_8cpp_ad104990c4f7a756040fcfd1211a062f5}{nomes}} \mbox{[}50\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Documentação Questão3. 
+
+\begin{DoxyAuthor}{Author}
+Carlos Pinheiro -\/ 20220030194 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}\label{main_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char const $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 78 of file main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78                                        \{}
+\DoxyCodeLine{79     \mbox{\hyperlink{classTurma}{Turma}} turma(8);}
+\DoxyCodeLine{80     turma.alocaAlunos();}
+\DoxyCodeLine{81     }
+\DoxyCodeLine{82     \textcolor{keywordtype}{int} entrada;}
+\DoxyCodeLine{83     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{84         cout << \textcolor{stringliteral}{"|      Menu inicial      |"} << endl;}
+\DoxyCodeLine{85         cout << \textcolor{stringliteral}{"\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_"} << endl;}
+\DoxyCodeLine{86         cout << \textcolor{stringliteral}{"|    1 -\/ Listar alunos   |"} << endl;}
+\DoxyCodeLine{87         cout << \textcolor{stringliteral}{"|    2 -\/ Ordenar alunos  |"} << endl;}
+\DoxyCodeLine{88         cout << \textcolor{stringliteral}{"|    3 -\/ Sair            |"} << endl;}
+\DoxyCodeLine{89         cout << \textcolor{stringliteral}{"\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_"} << endl;}
+\DoxyCodeLine{90         cout << \textcolor{stringliteral}{"   Digite uma das opções  "} << endl;}
+\DoxyCodeLine{91         cin >> entrada;}
+\DoxyCodeLine{92         \textcolor{keywordflow}{if}(entrada == 1)\{}
+\DoxyCodeLine{93             turma.imprimeAlunos();}
+\DoxyCodeLine{94         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(entrada == 2)\{}
+\DoxyCodeLine{95             \textcolor{keywordtype}{int} entrada2;}
+\DoxyCodeLine{96             \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{97                 cout << \textcolor{stringliteral}{"|      Ordenar por       |"} << endl;}
+\DoxyCodeLine{98                 cout << \textcolor{stringliteral}{"\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_"} << endl;}
+\DoxyCodeLine{99                 cout << \textcolor{stringliteral}{"|    1 -\/ Matricula       |"} << endl;}
+\DoxyCodeLine{100                 cout << \textcolor{stringliteral}{"|    2 -\/ Nome            |"} << endl;}
+\DoxyCodeLine{101                 cout << \textcolor{stringliteral}{"|    3 -\/ Nota            |"} << endl;}
+\DoxyCodeLine{102                 cout << \textcolor{stringliteral}{"|    4 -\/ Sair            |"} << endl;}
+\DoxyCodeLine{103                 cout << \textcolor{stringliteral}{"\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_"} << endl;}
+\DoxyCodeLine{104                 cout << \textcolor{stringliteral}{"   Digite uma das opções  "} << endl;}
+\DoxyCodeLine{105                 cin >> entrada2;}
+\DoxyCodeLine{106                 \textcolor{keywordflow}{if}(entrada2 == 1)\{}
+\DoxyCodeLine{107                     turma.ordenaCampo(\textcolor{stringliteral}{"matricula"});}
+\DoxyCodeLine{108                     turma.imprimeAlunos();}
+\DoxyCodeLine{109                     cout << \textcolor{stringliteral}{"Lista ordenada com sucesso!\(\backslash\)n"} << endl;}
+\DoxyCodeLine{110                     entrada2 = 4;}
+\DoxyCodeLine{111                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (entrada2 == 2)\{}
+\DoxyCodeLine{112                     turma.ordenaCampo(\textcolor{stringliteral}{"nome"});}
+\DoxyCodeLine{113                     turma.imprimeAlunos();}
+\DoxyCodeLine{114                     cout << \textcolor{stringliteral}{"Lista ordenada com sucesso!\(\backslash\)n"} << endl;}
+\DoxyCodeLine{115                     entrada2 = 4;}
+\DoxyCodeLine{116                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (entrada2 == 3)\{}
+\DoxyCodeLine{117                     turma.ordenaCampo(\textcolor{stringliteral}{"nota"});}
+\DoxyCodeLine{118                     turma.imprimeAlunos();}
+\DoxyCodeLine{119                     cout << \textcolor{stringliteral}{"Lista ordenada com sucesso!\(\backslash\)n"} << endl;}
+\DoxyCodeLine{120                     entrada2 = 4;}
+\DoxyCodeLine{121                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{122                     cout << \textcolor{stringliteral}{"Informe uma opção válida"} << endl;}
+\DoxyCodeLine{123                 \}}
+\DoxyCodeLine{124             \} \textcolor{keywordflow}{while} (entrada2 != 4);}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126         \}}
+\DoxyCodeLine{127     \} \textcolor{keywordflow}{while} (entrada!=3);}
+\DoxyCodeLine{128     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{129 \}}
+
+\end{DoxyCode}
+
+
+References Turma\+::aloca\+Alunos(), Turma\+::imprime\+Alunos(), and Turma\+::ordena\+Campo().
+
+Here is the call graph for this function\+:
+% FIG 1
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8cpp_ad104990c4f7a756040fcfd1211a062f5}\label{main_8cpp_ad104990c4f7a756040fcfd1211a062f5}} 
+\index{main.cpp@{main.cpp}!nomes@{nomes}}
+\index{nomes@{nomes}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{nomes}{nomes}}
+{\footnotesize\ttfamily string nomes\mbox{[}50\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{\textcolor{stringliteral}{"Ana"}, \textcolor{stringliteral}{"Bianca"}, \textcolor{stringliteral}{"Carlos"}, \textcolor{stringliteral}{"Daniel"}, \textcolor{stringliteral}{"Eduarda"}, \textcolor{stringliteral}{"Fabio"}, \textcolor{stringliteral}{"Gabriela"}, \textcolor{stringliteral}{"Henrique"}, \textcolor{stringliteral}{"Isabela"}, \textcolor{stringliteral}{"João"},}
+\DoxyCodeLine{                        \textcolor{stringliteral}{"Karen"}, \textcolor{stringliteral}{"Lucas"}, \textcolor{stringliteral}{"Mariana"}, \textcolor{stringliteral}{"Natalia"}, \textcolor{stringliteral}{"Oscar"}, \textcolor{stringliteral}{"Pedro"}, \textcolor{stringliteral}{"Quintino"}, \textcolor{stringliteral}{"Raquel"}, \textcolor{stringliteral}{"Sofia"}, \textcolor{stringliteral}{"Tomas"},}
+\DoxyCodeLine{                        \textcolor{stringliteral}{"Ubiratan"}, \textcolor{stringliteral}{"Valentina"}, \textcolor{stringliteral}{"Wagner"}, \textcolor{stringliteral}{"Xavier"}, \textcolor{stringliteral}{"Yuri"}, \textcolor{stringliteral}{"Zilda"}, \textcolor{stringliteral}{"Aline"}, \textcolor{stringliteral}{"Bruno"}, \textcolor{stringliteral}{"Cristina"}, \textcolor{stringliteral}{"Diego"},}
+\DoxyCodeLine{                        \textcolor{stringliteral}{"Elias"}, \textcolor{stringliteral}{"Fernanda"}, \textcolor{stringliteral}{"Gustavo"}, \textcolor{stringliteral}{"Helena"}, \textcolor{stringliteral}{"Ivan"}, \textcolor{stringliteral}{"Julia"}, \textcolor{stringliteral}{"Karina"}, \textcolor{stringliteral}{"Leonardo"}, \textcolor{stringliteral}{"Marta"}, \textcolor{stringliteral}{"Nelson"},}
+\DoxyCodeLine{                        \textcolor{stringliteral}{"Olga"}, \textcolor{stringliteral}{"Paulo"}, \textcolor{stringliteral}{"Queila"}, \textcolor{stringliteral}{"Rafael"}, \textcolor{stringliteral}{"Samantha"}, \textcolor{stringliteral}{"Thiago"}, \textcolor{stringliteral}{"Ulisses"}, \textcolor{stringliteral}{"Vanessa"}, \textcolor{stringliteral}{"Wilma"}, \textcolor{stringliteral}{"Yago"}\}}
+
+\end{DoxyCode}
+
+
+Definition at line 15 of file main.\+cpp.
+
+
+
+Referenced by Turma\+::aloca\+Alunos().
+

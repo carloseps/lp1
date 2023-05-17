@@ -1,0 +1,406 @@
+\hypertarget{classTurma}{}\doxysection{Turma Class Reference}
+\label{classTurma}\index{Turma@{Turma}}
+
+
+{\ttfamily \#include $<$Turma.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTurma_a228500b294039fcc147be754c2784447}{Turma}} (int \mbox{\hyperlink{classTurma_a7ceae03248b870f170311a32ae223cdb}{capacidade}})
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classTurma}{Turma}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTurma_ac9901558278461593150226ed06567e2}{$\sim$\+Turma}} ()
+\item 
+void \mbox{\hyperlink{classTurma_ad74566692d95bfe171a65d2af985bd33}{set\+Capacidade}} (int \mbox{\hyperlink{classTurma_a7ceae03248b870f170311a32ae223cdb}{capacidade}})
+\begin{DoxyCompactList}\small\item\em Define a quantidade de alunos que a turma suporta. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTurma_ae627c3f60b589c1a0f2f7d94365aa38d}{get\+Capacidade}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a quantidade de alunos que a turma suporta. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTurma_a4d5e8884abde06a64f8efce59a1fa40d}{set\+Vagas}} (int \mbox{\hyperlink{classTurma_a0b602a5f427e8a9bbbb1a216041932ab}{vagas}})
+\item 
+int \mbox{\hyperlink{classTurma_a5186670b896e0c88dff4f9bf23141507}{get\+Vagas}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a quantidade de vagas da turma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTurma_afaa1f410d468abbcbae7ca3c92821cef}{aloca\+Alunos}} ()
+\begin{DoxyCompactList}\small\item\em Funcao que aloca os alunos da classe \mbox{\hyperlink{classTurma}{Turma}} criando novos objetos \mbox{\hyperlink{classAluno}{Aluno}} e os adicionando à lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTurma_a6fe7ef33d7fd9d35111cfdb2f91c320d}{imprime\+Alunos}} () const
+\begin{DoxyCompactList}\small\item\em Imprime cada elemento e seus atributos do list de alunos da turma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTurma_a3758b00242aee9ec17a867101cb4a073}{ordena\+Campo}} (std\+::string campo)
+\begin{DoxyCompactList}\small\item\em Funcao que ordena a lista de alunos da classe \mbox{\hyperlink{classTurma}{Turma}} usando Selection Sort. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classTurma_a7ceae03248b870f170311a32ae223cdb}{capacidade}}
+\item 
+int \mbox{\hyperlink{classTurma_a0b602a5f427e8a9bbbb1a216041932ab}{vagas}}
+\item 
+std\+::list$<$ \mbox{\hyperlink{classAluno}{Aluno}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{classTurma_a40d32f3a2172ee08318c46b24116924c}{alunos}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 9 of file Turma.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTurma_a228500b294039fcc147be754c2784447}\label{classTurma_a228500b294039fcc147be754c2784447}} 
+\index{Turma@{Turma}!Turma@{Turma}}
+\index{Turma@{Turma}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{Turma()}{Turma()}}
+{\footnotesize\ttfamily Turma\+::\+Turma (\begin{DoxyParamCaption}\item[{int}]{capacidade }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classTurma}{Turma}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacidade} & = quantidade de alunos que a turma suporta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 15 of file Turma.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                            \{}
+\DoxyCodeLine{16     this-\/>\mbox{\hyperlink{classTurma_a7ceae03248b870f170311a32ae223cdb}{capacidade}} = \mbox{\hyperlink{classTurma_a7ceae03248b870f170311a32ae223cdb}{capacidade}};}
+\DoxyCodeLine{17     this-\/>\mbox{\hyperlink{classTurma_a40d32f3a2172ee08318c46b24116924c}{alunos}} = \textcolor{keyword}{new} std::list<Aluno*>();}
+\DoxyCodeLine{18 \}}
+
+\end{DoxyCode}
+
+
+References alunos, and capacidade.
+
+\mbox{\Hypertarget{classTurma_ac9901558278461593150226ed06567e2}\label{classTurma_ac9901558278461593150226ed06567e2}} 
+\index{Turma@{Turma}!````~Turma@{$\sim$Turma}}
+\index{````~Turma@{$\sim$Turma}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{$\sim$Turma()}{~Turma()}}
+{\footnotesize\ttfamily Turma\+::$\sim$\+Turma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 21 of file Turma.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21               \{}
+\DoxyCodeLine{22     \textcolor{keyword}{delete} \mbox{\hyperlink{classTurma_a40d32f3a2172ee08318c46b24116924c}{alunos}};}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+
+
+References alunos.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTurma_afaa1f410d468abbcbae7ca3c92821cef}\label{classTurma_afaa1f410d468abbcbae7ca3c92821cef}} 
+\index{Turma@{Turma}!alocaAlunos@{alocaAlunos}}
+\index{alocaAlunos@{alocaAlunos}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{alocaAlunos()}{alocaAlunos()}}
+{\footnotesize\ttfamily void Turma\+::aloca\+Alunos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que aloca os alunos da classe \mbox{\hyperlink{classTurma}{Turma}} criando novos objetos \mbox{\hyperlink{classAluno}{Aluno}} e os adicionando à lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 26 of file main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26                         \{}
+\DoxyCodeLine{27     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classTurma_a7ceae03248b870f170311a32ae223cdb}{capacidade}}; i++) \{}
+\DoxyCodeLine{28         \textcolor{keywordtype}{int} matricula = (i*10) + 100;}
+\DoxyCodeLine{29         \textcolor{keywordtype}{string} nome = \mbox{\hyperlink{main_8cpp_ad104990c4f7a756040fcfd1211a062f5}{nomes}}[i];}
+\DoxyCodeLine{30         \textcolor{keywordtype}{float} nota1 = (float) (rand() \% 101) / 10;}
+\DoxyCodeLine{31         \textcolor{keywordtype}{float} nota2 = (float) (rand() \% 101) / 10;}
+\DoxyCodeLine{32         \textcolor{keywordtype}{float} nota3 = (float) (rand() \% 101) / 10;}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34         \mbox{\hyperlink{classAluno}{Aluno}}* aluno = \textcolor{keyword}{new} \mbox{\hyperlink{classAluno}{Aluno}}(matricula, nome, nota1, nota2, nota3);}
+\DoxyCodeLine{35         \mbox{\hyperlink{classTurma_a40d32f3a2172ee08318c46b24116924c}{alunos}}-\/>push\_back(aluno);}
+\DoxyCodeLine{36     \}}
+\DoxyCodeLine{37 \}}
+
+\end{DoxyCode}
+
+
+References nomes.
+
+
+
+Referenced by main().
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classTurma_ae627c3f60b589c1a0f2f7d94365aa38d}\label{classTurma_ae627c3f60b589c1a0f2f7d94365aa38d}} 
+\index{Turma@{Turma}!getCapacidade@{getCapacidade}}
+\index{getCapacidade@{getCapacidade}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{getCapacidade()}{getCapacidade()}}
+{\footnotesize\ttfamily int Turma\+::get\+Capacidade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna a quantidade de alunos que a turma suporta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 48 of file Turma.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48                                \{}
+\DoxyCodeLine{49     \textcolor{keywordflow}{return} \mbox{\hyperlink{classTurma_a7ceae03248b870f170311a32ae223cdb}{capacidade}};}
+\DoxyCodeLine{50 \}}
+
+\end{DoxyCode}
+
+
+References capacidade.
+
+\mbox{\Hypertarget{classTurma_a5186670b896e0c88dff4f9bf23141507}\label{classTurma_a5186670b896e0c88dff4f9bf23141507}} 
+\index{Turma@{Turma}!getVagas@{getVagas}}
+\index{getVagas@{getVagas}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{getVagas()}{getVagas()}}
+{\footnotesize\ttfamily int Turma\+::get\+Vagas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna a quantidade de vagas da turma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 30 of file Turma.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30                           \{}
+\DoxyCodeLine{31     \textcolor{keywordflow}{return} \mbox{\hyperlink{classTurma_a0b602a5f427e8a9bbbb1a216041932ab}{vagas}};}
+\DoxyCodeLine{32 \}}
+
+\end{DoxyCode}
+
+
+References vagas.
+
+\mbox{\Hypertarget{classTurma_a6fe7ef33d7fd9d35111cfdb2f91c320d}\label{classTurma_a6fe7ef33d7fd9d35111cfdb2f91c320d}} 
+\index{Turma@{Turma}!imprimeAlunos@{imprimeAlunos}}
+\index{imprimeAlunos@{imprimeAlunos}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{imprimeAlunos()}{imprimeAlunos()}}
+{\footnotesize\ttfamily void Turma\+::imprime\+Alunos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Imprime cada elemento e seus atributos do list de alunos da turma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 57 of file Turma.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57                                 \{}
+\DoxyCodeLine{58     \textcolor{keywordflow}{for} (\mbox{\hyperlink{classAluno}{Aluno}}* a : *\mbox{\hyperlink{classTurma_a40d32f3a2172ee08318c46b24116924c}{alunos}}) \{}
+\DoxyCodeLine{59         std::cout << \textcolor{stringliteral}{"Nome: "} << a-\/>getNome() << std::endl;}
+\DoxyCodeLine{60         std::cout << \textcolor{stringliteral}{"Matrícula: "} << a-\/>getMatricula() << std::endl;}
+\DoxyCodeLine{61         std::cout << \textcolor{stringliteral}{"Notas: "} << a-\/>getNota1() << \textcolor{stringliteral}{", "} << a-\/>getNota2() << \textcolor{stringliteral}{", "} << a-\/>getNota3() << std::endl;}
+\DoxyCodeLine{62         std::cout << \textcolor{stringliteral}{"\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_"} << std::endl;}
+\DoxyCodeLine{63     \}}
+\DoxyCodeLine{64 \}}
+
+\end{DoxyCode}
+
+
+References alunos.
+
+
+
+Referenced by main().
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classTurma_a3758b00242aee9ec17a867101cb4a073}\label{classTurma_a3758b00242aee9ec17a867101cb4a073}} 
+\index{Turma@{Turma}!ordenaCampo@{ordenaCampo}}
+\index{ordenaCampo@{ordenaCampo}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{ordenaCampo()}{ordenaCampo()}}
+{\footnotesize\ttfamily void Turma\+::ordena\+Campo (\begin{DoxyParamCaption}\item[{std\+::string}]{campo }\end{DoxyParamCaption})}
+
+
+
+Funcao que ordena a lista de alunos da classe \mbox{\hyperlink{classTurma}{Turma}} usando Selection Sort. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em campo} & = criterio de ordenação, por qual campo deverá ser ordenada a lista \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44                                    \{}
+\DoxyCodeLine{45     \textcolor{keywordflow}{if} (campo == \textcolor{stringliteral}{"matricula"}) \{}
+\DoxyCodeLine{46         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} i = \mbox{\hyperlink{classTurma_a40d32f3a2172ee08318c46b24116924c}{alunos}}-\/>begin(); i != \mbox{\hyperlink{classTurma_a40d32f3a2172ee08318c46b24116924c}{alunos}}-\/>end(); ++i) \{}
+\DoxyCodeLine{47             \textcolor{keyword}{auto} min = i;}
+\DoxyCodeLine{48             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} j = i; j != \mbox{\hyperlink{classTurma_a40d32f3a2172ee08318c46b24116924c}{alunos}}-\/>end(); ++j) \{}
+\DoxyCodeLine{49                 \textcolor{keywordflow}{if} ((*j)-\/>getMatricula() < (*min)-\/>getMatricula()) \{}
+\DoxyCodeLine{50                     min = j;}
+\DoxyCodeLine{51                 \}}
+\DoxyCodeLine{52             \}}
+\DoxyCodeLine{53             swap(*i, *min);}
+\DoxyCodeLine{54         \}}
+\DoxyCodeLine{55     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (campo == \textcolor{stringliteral}{"nome"})\{}
+\DoxyCodeLine{56         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} i = \mbox{\hyperlink{classTurma_a40d32f3a2172ee08318c46b24116924c}{alunos}}-\/>begin(); i != \mbox{\hyperlink{classTurma_a40d32f3a2172ee08318c46b24116924c}{alunos}}-\/>end(); ++i) \{}
+\DoxyCodeLine{57             \textcolor{keyword}{auto} min = i;}
+\DoxyCodeLine{58             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} j = i; j != \mbox{\hyperlink{classTurma_a40d32f3a2172ee08318c46b24116924c}{alunos}}-\/>end(); ++j) \{}
+\DoxyCodeLine{59                 \textcolor{keywordflow}{if} ((*j)-\/>getNome() < (*min)-\/>getNome()) \{}
+\DoxyCodeLine{60                     min = j;}
+\DoxyCodeLine{61                 \}}
+\DoxyCodeLine{62             \}}
+\DoxyCodeLine{63             swap(*i, *min);}
+\DoxyCodeLine{64         \}}
+\DoxyCodeLine{65     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (campo == \textcolor{stringliteral}{"nota"})\{}
+\DoxyCodeLine{66         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} i = \mbox{\hyperlink{classTurma_a40d32f3a2172ee08318c46b24116924c}{alunos}}-\/>begin(); i != \mbox{\hyperlink{classTurma_a40d32f3a2172ee08318c46b24116924c}{alunos}}-\/>end(); ++i) \{}
+\DoxyCodeLine{67             \textcolor{keyword}{auto} min = i;}
+\DoxyCodeLine{68             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} j = i; j != \mbox{\hyperlink{classTurma_a40d32f3a2172ee08318c46b24116924c}{alunos}}-\/>end(); ++j) \{}
+\DoxyCodeLine{69                 \textcolor{keywordflow}{if} ((*j)-\/>calculaMedia() < (*min)-\/>calculaMedia()) \{}
+\DoxyCodeLine{70                     min = j;}
+\DoxyCodeLine{71                 \}}
+\DoxyCodeLine{72             \}}
+\DoxyCodeLine{73             swap(*i, *min);}
+\DoxyCodeLine{74         \}}
+\DoxyCodeLine{75     \}}
+\DoxyCodeLine{76 \}}
+
+\end{DoxyCode}
+
+
+Referenced by main().
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classTurma_ad74566692d95bfe171a65d2af985bd33}\label{classTurma_ad74566692d95bfe171a65d2af985bd33}} 
+\index{Turma@{Turma}!setCapacidade@{setCapacidade}}
+\index{setCapacidade@{setCapacidade}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{setCapacidade()}{setCapacidade()}}
+{\footnotesize\ttfamily void Turma\+::set\+Capacidade (\begin{DoxyParamCaption}\item[{int}]{capacidade }\end{DoxyParamCaption})}
+
+
+
+Define a quantidade de alunos que a turma suporta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacidade} & = quantidade de alunos que a turma suporta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file Turma.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39                                         \{}
+\DoxyCodeLine{40     this-\/>\mbox{\hyperlink{classTurma_a7ceae03248b870f170311a32ae223cdb}{capacidade}} = \mbox{\hyperlink{classTurma_a7ceae03248b870f170311a32ae223cdb}{capacidade}};}
+\DoxyCodeLine{41 \}}
+
+\end{DoxyCode}
+
+
+References capacidade.
+
+\mbox{\Hypertarget{classTurma_a4d5e8884abde06a64f8efce59a1fa40d}\label{classTurma_a4d5e8884abde06a64f8efce59a1fa40d}} 
+\index{Turma@{Turma}!setVagas@{setVagas}}
+\index{setVagas@{setVagas}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{setVagas()}{setVagas()}}
+{\footnotesize\ttfamily void Turma\+::set\+Vagas (\begin{DoxyParamCaption}\item[{int}]{vagas }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTurma_a40d32f3a2172ee08318c46b24116924c}\label{classTurma_a40d32f3a2172ee08318c46b24116924c}} 
+\index{Turma@{Turma}!alunos@{alunos}}
+\index{alunos@{alunos}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{alunos}{alunos}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{classAluno}{Aluno}}$\ast$$>$$\ast$ Turma\+::alunos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 13 of file Turma.\+h.
+
+
+
+Referenced by imprime\+Alunos(), Turma(), and $\sim$\+Turma().
+
+\mbox{\Hypertarget{classTurma_a7ceae03248b870f170311a32ae223cdb}\label{classTurma_a7ceae03248b870f170311a32ae223cdb}} 
+\index{Turma@{Turma}!capacidade@{capacidade}}
+\index{capacidade@{capacidade}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{capacidade}{capacidade}}
+{\footnotesize\ttfamily int Turma\+::capacidade\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 11 of file Turma.\+h.
+
+
+
+Referenced by get\+Capacidade(), set\+Capacidade(), and Turma().
+
+\mbox{\Hypertarget{classTurma_a0b602a5f427e8a9bbbb1a216041932ab}\label{classTurma_a0b602a5f427e8a9bbbb1a216041932ab}} 
+\index{Turma@{Turma}!vagas@{vagas}}
+\index{vagas@{vagas}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{vagas}{vagas}}
+{\footnotesize\ttfamily int Turma\+::vagas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 12 of file Turma.\+h.
+
+
+
+Referenced by get\+Vagas().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Q3/\mbox{\hyperlink{Turma_8h}{Turma.\+h}}\item 
+Q3/\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\item 
+Q3/\mbox{\hyperlink{Turma_8cpp}{Turma.\+cpp}}\end{DoxyCompactItemize}
