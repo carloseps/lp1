@@ -1,0 +1,7 @@
+6
+A1	Carlos	A	2000.33
+A2	Eduardo	A	1500.56
+B1	Alessandra	B	2000.78
+B2	Vitória	B	1500.00
+C1	Pinheiro	C	800.80
+C2	Silva	C	800.10

@@ -1,0 +1,4 @@
+Carlos 9  Aprovado
+Eduardo 7.33333  Aprovado
+Pinheiro 5.66667  Reprovado
+Silva 7  Aprovado

@@ -7,9 +7,6 @@ using namespace std;
 
 #define TAMANHO 4
 
-int minimum(int a, int b);
-int min(int array[], int tamanho);
-
 float calculaMedia(int array[], int tamanho){
     int soma = 0;
     for (int i = 0; i < tamanho; i++){
