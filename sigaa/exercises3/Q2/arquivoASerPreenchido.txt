@@ -1,0 +1,3 @@
+Menor elemento: 2
+Maior elemento: 10
+Média dos elementos: 5.33333
