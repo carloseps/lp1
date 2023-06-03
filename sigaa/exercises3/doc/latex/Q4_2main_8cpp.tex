@@ -1,0 +1,86 @@
+\hypertarget{Q4_2main_8cpp}{}\doxysection{Q4/main.cpp File Reference}
+\label{Q4_2main_8cpp}\index{Q4/main.cpp@{Q4/main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include \char`\"{}Funcionario.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{Q4_2main_8cpp_ae83b55451a5e2e9e0f5a99cb63f822cf}{copia\+\_\+dados}} (std\+::ifstream $\ast$file, int n, \mbox{\hyperlink{classFuncionario}{Funcionario}} $\ast$\mbox{\hyperlink{Q4_2main_8cpp_a2ff75f0179d46f95f9f36f58520aa794}{funcionarios}})
+\begin{DoxyCompactList}\small\item\em Copia os dados dos funcionários a partir de um arquivo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Q4_2main_8cpp_a849fc2c868d20e3f52cf3df86e056be5}{imprime\+\_\+folha\+\_\+pagamento}} (int n, \mbox{\hyperlink{classFuncionario}{Funcionario}} $\ast$\mbox{\hyperlink{Q4_2main_8cpp_a2ff75f0179d46f95f9f36f58520aa794}{funcionarios}}, char depto)
+\begin{DoxyCompactList}\small\item\em Imprime a folha de pagamento de um departamento. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Q4_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFuncionario}{Funcionario}} $\ast$ \mbox{\hyperlink{Q4_2main_8cpp_a2ff75f0179d46f95f9f36f58520aa794}{funcionarios}}
+\begin{DoxyCompactList}\small\item\em Array de funcionários. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{Q4_2main_8cpp_ae83b55451a5e2e9e0f5a99cb63f822cf}\label{Q4_2main_8cpp_ae83b55451a5e2e9e0f5a99cb63f822cf}} 
+\index{main.cpp@{main.cpp}!copia\_dados@{copia\_dados}}
+\index{copia\_dados@{copia\_dados}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{copia\_dados()}{copia\_dados()}}
+{\footnotesize\ttfamily void copia\+\_\+dados (\begin{DoxyParamCaption}\item[{std\+::ifstream $\ast$}]{file,  }\item[{int}]{n,  }\item[{\mbox{\hyperlink{classFuncionario}{Funcionario}} $\ast$}]{funcionarios }\end{DoxyParamCaption})}
+
+
+
+Copia os dados dos funcionários a partir de um arquivo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & O arquivo de entrada. \\
+\hline
+{\em n} & O número total de funcionários a serem copiados. \\
+\hline
+{\em funcionarios} & O array de funcionários. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Q4_2main_8cpp_a849fc2c868d20e3f52cf3df86e056be5}\label{Q4_2main_8cpp_a849fc2c868d20e3f52cf3df86e056be5}} 
+\index{main.cpp@{main.cpp}!imprime\_folha\_pagamento@{imprime\_folha\_pagamento}}
+\index{imprime\_folha\_pagamento@{imprime\_folha\_pagamento}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{imprime\_folha\_pagamento()}{imprime\_folha\_pagamento()}}
+{\footnotesize\ttfamily void imprime\+\_\+folha\+\_\+pagamento (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{\mbox{\hyperlink{classFuncionario}{Funcionario}} $\ast$}]{funcionarios,  }\item[{char}]{depto }\end{DoxyParamCaption})}
+
+
+
+Imprime a folha de pagamento de um departamento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & O número total de funcionários. \\
+\hline
+{\em funcionarios} & O array de funcionários. \\
+\hline
+{\em depto} & O departamento a ser considerado. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Q4_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{Q4_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$ Aloca memória para o array de funcionários.
+
+$<$ Libera a memória alocada para o array de funcionários.
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{Q4_2main_8cpp_a2ff75f0179d46f95f9f36f58520aa794}\label{Q4_2main_8cpp_a2ff75f0179d46f95f9f36f58520aa794}} 
+\index{main.cpp@{main.cpp}!funcionarios@{funcionarios}}
+\index{funcionarios@{funcionarios}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{funcionarios}{funcionarios}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFuncionario}{Funcionario}}$\ast$ funcionarios}
+
+
+
+Array de funcionários. 
+

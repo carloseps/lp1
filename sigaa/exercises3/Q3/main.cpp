@@ -8,6 +8,12 @@ struct Aluno {
     double notas[3];
 };
 
+/**
+ * @brief Calcula a média de um array de valores double.
+ * @param array O array de valores double.
+ * @param tamanho O tamanho do array.
+ * @return A média dos valores.
+ */
 float calculaMedia(double array[], int tamanho){
     int soma = 0;
     for (int i = 0; i < tamanho; i++){
@@ -16,6 +22,11 @@ float calculaMedia(double array[], int tamanho){
     return (soma/(double)tamanho);
 }
 
+/**
+ * @brief Calcula a situação de um aluno com base em suas notas.
+ * @param aluno O aluno a ser avaliado.
+ * @return A situação do aluno (Aprovado ou Reprovado).
+ */
 std::string calculaSituacao(Aluno aluno){
     if(calculaMedia(aluno.notas, 3) >= 7.0){
         return "Aprovado";
@@ -30,6 +41,7 @@ int main() {
         std::cout << "Não foi possível abrir o arquivo!" << std::endl;
         return -1;
     }
+
     std::string linha;
     int contador = 0;
     while (std::getline(file, linha)) {

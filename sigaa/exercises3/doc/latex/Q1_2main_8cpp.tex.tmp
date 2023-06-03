@@ -1,0 +1,58 @@
+\hypertarget{Q1_2main_8cpp}{}\doxysection{Q1/main.cpp File Reference}
+\label{Q1_2main_8cpp}\index{Q1/main.cpp@{Q1/main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}Pessoa.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{Q1_2main_8cpp_a26f0ea282edd059abe2074fb9a0152df}{T\+A\+M\+A\+N\+HO}}~4
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{Q1_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Função principal do programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Q1_2main_8cpp_a26f0ea282edd059abe2074fb9a0152df}\label{Q1_2main_8cpp_a26f0ea282edd059abe2074fb9a0152df}} 
+\index{main.cpp@{main.cpp}!TAMANHO@{TAMANHO}}
+\index{TAMANHO@{TAMANHO}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{TAMANHO}{TAMANHO}}
+{\footnotesize\ttfamily \#define T\+A\+M\+A\+N\+HO~4}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{Q1_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{Q1_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função principal do programa. 
+
+\begin{DoxyReturn}{Returns}
+0 se o programa executar corretamente. 
+\end{DoxyReturn}
+$<$ Objeto ifstream para leitura do arquivo.
+
+$<$ Variável para armazenar cada linha do arquivo.
+
+$<$ Tamanho do array de pessoas.
+
+$<$ Array de objetos \mbox{\hyperlink{classPessoa}{Pessoa}}.
+
+$<$ Índice para controlar a posição no array.
+
+$<$ Cria um objeto \mbox{\hyperlink{classPessoa}{Pessoa}} a partir da linha do arquivo.
+
+$<$ Armazena a \mbox{\hyperlink{classPessoa}{Pessoa}} no array.
+
+$<$ Imprime o nome de cada pessoa no array.

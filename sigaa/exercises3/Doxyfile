@@ -1,0 +1,39 @@
+#---------------------------------------------------------------------------
+# Doxyfile para geração da documentação do código-fonte
+#---------------------------------------------------------------------------
+
+# Especifica os arquivos de entrada que serão documentados.
+INPUT = Q1 Q2 Q3 Q4
+
+# Especifica o padrão de arquivos que serão processados.
+FILE_PATTERNS = *.cpp *.h
+
+# Habilita a geração de documentação para todas as entidades encontradas.
+EXTRACT_ALL = YES
+
+# Define o estilo de documentação a ser utilizado.
+JAVADOC_AUTOBRIEF = YES
+
+# Gera documentação apenas para membros e funções documentados explicitamente.
+EXTRACT_PRIVATE = YES
+
+# Define o formato do cabeçalho dos arquivos gerados.
+GENERATE_HTML_HEADER = header.html
+
+# Define o diretório de saída para a documentação gerada.
+OUTPUT_DIRECTORY = doc
+
+# Define o título da documentação.
+PROJECT_NAME = Meu Projeto
+
+# Define a versão do projeto.
+PROJECT_NUMBER = 1.0
+
+# Define o nome do autor do projeto.
+PROJECT_AUTHOR = Carlos Pinheiro
+
+# Define a data de criação da documentação.
+PROJECT_DATE = 02/06/2023
+
+# Especifica o estilo do tema a ser utilizado na documentação.
+HTML_STYLESHEET = estilo.css

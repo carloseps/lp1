@@ -7,6 +7,12 @@ using namespace std;
 
 #define TAMANHO 4
 
+/**
+ * @brief Calcula a média dos elementos de um array de inteiros.
+ * @param array O array de inteiros.
+ * @param tamanho O tamanho do array.
+ * @return A média dos elementos.
+ */
 float calculaMedia(int array[], int tamanho){
     int soma = 0;
     for (int i = 0; i < tamanho; i++){
